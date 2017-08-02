@@ -1,0 +1,261 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-6-5, 16:43:39
+    Author     : Росана
+*/
+.cf:before,
+.cf:after{
+    content: " ";
+    display:table;
+}
+.cf:after{
+    clear:both;
+}
+
+
+.si{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.textbox{
+   
+    font-family:Book Antiqua;
+    font-size: large;
+    min-height: 400px;
+    width:500px;
+    float:left;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: transparent;
+    color:#00008B; 
+    text-align:justify;
+  
+}
+
+.te{
+    text-align: justify;
+}
+.si{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.pics{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.text{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    font-weight: bold;
+    font-size: large;
+    color: mediumvioletred; 
+    margin: 0px 0px 0px 0px;
+    
+    float:left;
+    width: 100%;
+    
+}
+.text1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    font-weight: bold;
+    font-size: larger;
+    color: black; 
+    margin: 0px 0px 10px 0px;
+    padding-top: 20px;
+    float:left;
+    width: 100%;
+    
+}
+
+.de{
+    margin: 0 5px;
+}
+.lessons{
+   
+    padding: 5px;
+}
+
+
+.de{
+    margin: 0 5px;
+}
+.error{
+    color: red;
+}
+.jumbotro {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: black;
+  background-color: #F0F0F0;
+}
+
+.jumbotro p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  text-align:justify;
+  
+}
+
+.text2 {
+    font-family:Arial, Helvetica, sans-serif !important;
+    text-align:justify;
+    font-size: 100px;
+    color: black; 
+    
+    
+    
+}
+
+section#contact {
+   background-color: black;
+    background-image: url(../pics/form2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #8B3A62;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #CD6090;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #CD6090;
+    color: #fff;
+    background-color: #8B3A62;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #8B3A62;
+    background-color: #CD6090;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #FF6EB4;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #FF6EB4;
+}
+
+
+
+
+
+
+
+
+
