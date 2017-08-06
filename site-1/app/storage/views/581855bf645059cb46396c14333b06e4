@@ -1,0 +1,7 @@
+Здравейте, <?php echo $username; ?>, <br><br>
+
+Моля, активирайте вашият акаунт използвайки следният линк. <br><br>
+
+---<br>
+<a href="<?php echo $link; ?>"><?php echo $link; ?></a><br>
+---

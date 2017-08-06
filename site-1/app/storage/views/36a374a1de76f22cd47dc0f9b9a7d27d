@@ -1,0 +1,48 @@
+<?php $__env->startSection('content'); ?>
+
+<section id="contact">
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <?php if(Session::has('global')): ?>
+    <p class="text-red"><?php echo Session::get('global'); ?></p>
+        <?php endif; ?>
+                  <p class="section-heading ta">Ако сте забравили паролата си, моля, напишете<br> в полето 
+                      електронната си поща и ние ще ви <br>изпратим нова парола.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                                      
+                        <form action="<?php echo URL::route('account-forgot-password-post'); ?>" method="post">
+                            
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                   <input type="text" name="email" class="form-control" placeholder="Електронна поща" id="email" <?php echo (Input::old('email')) ? ' value ="'. e(Input::old('email')) .'"' : ''; ?>> 
+                                    <p class="error1"> <?php if($errors->has('email')): ?>
+                                    <?php echo $errors->first('email'); ?>
+
+                                    <?php endif; ?> </p>
+                                </div>
+                                                     
+                            </div>
+                            <div class="col-md-12">
+                               <input type="submit" value="Възстанови" class="btn btn-xl">
+                            </div>
+                        </div>
+                            <?php echo Form::token(); ?>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                  
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.main2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

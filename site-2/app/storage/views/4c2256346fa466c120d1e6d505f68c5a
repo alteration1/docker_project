@@ -1,0 +1,59 @@
+
+<?php $__env->startSection('content'); ?>
+<br><br>
+<section>
+        <div class="container">
+            
+  <form action="<?php echo URL::route('account-create-post'); ?>" method="post">
+      
+      <div class="row">
+         <div class="input-group col-lg-5">
+  <span class="input-group-addon"><?php echo trans('account.email'); ?>:</span>
+        <input type="text" name="email" class="form-control" <?php echo (Input::old('email')) ? ' value ="'. e(Input::old('email')) .'"' : ''; ?>>
+      </div>
+      </div>
+        <p class="red"> <?php if($errors->has('email')): ?>
+          <?php echo $errors->first('email'); ?>
+          <?php endif; ?> </p>
+      
+      <div class="row">
+         <div class="input-group col-lg-5">
+  <span class="input-group-addon"><?php echo trans('account.username'); ?>:</span>
+     <input type="text" name="username" class="form-control" <?php echo (Input::old('username')) ? ' value ="'. e(Input::old('username')) .'"' : ''; ?>>
+      </div>
+      </div>
+     <p class="red"><?php if($errors->has('username')): ?>
+          <?php echo $errors->first('username'); ?>
+          <?php endif; ?> </p>
+          
+      <div class="row">
+         <div class="input-group col-lg-5">
+  <span class="input-group-addon"><?php echo trans('account.password'); ?>:</span>
+         <input type="password" name="password" class="form-control">
+      </div>
+      </div>
+         <p class="red"> <?php if($errors->has('password')): ?>
+          <?php echo $errors->first('password'); ?>
+          <?php endif; ?> </p> 
+      
+      <div class="row">
+         <div class="input-group col-lg-5">
+  <span class="input-group-addon"><?php echo trans('account.password_again'); ?>:</span>
+         <input type="password" name="password_again" class="form-control">
+      </div>
+      </div>
+         <p class="red"> <?php if($errors->has('password_again')): ?>
+          <?php echo $errors->first('password_again'); ?>
+          <?php endif; ?> </p> 
+        <div class="row">
+         <div class="input-group col-lg-5"> 
+      <input type="submit" value="<?php echo trans('account.create_account'); ?>" class="btn btn-danger">
+        </div>
+        </div>
+     <?php echo Form::token(); ?>
+      </form>
+         </div>
+    </section>
+                    
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

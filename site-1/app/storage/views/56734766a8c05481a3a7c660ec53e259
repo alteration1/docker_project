@@ -1,0 +1,16 @@
+<?php $__env->startSection('content'); ?>
+<section id='contac'>
+    <div class="container">   
+<div class="row">
+    <div class="col-md-10">
+        <h3>Други наши курсове:</h3>
+        
+        <a href="http://zdrave.izuchavai.me/"><img src="<?php echo asset('img/viki21.jpg'); ?>" class="img-responsive"></a><br>    
+        <a href="http://bible.izuchavai.me/"><img src="<?php echo asset('img/bible5.jpg'); ?>" class="img-responsive"></a><br>
+        <a href="http://otkrovenie.izuchavai.me/"><img src="<?php echo asset('img/revelation.jpg'); ?>" class="img-responsive"></a>
+    </div>
+    </div>
+</div>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.main3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

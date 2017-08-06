@@ -1,0 +1,37 @@
+<?php $__env->startSection('content'); ?>
+
+<br><br>  <br><br>
+    <?php foreach($lesson as $less): ?>
+
+      
+<div class="container">
+              
+    <div class="jumbotro">
+          <div class="row">
+          <div class="col-xs-6 col-md-6">
+          <h4><?php echo e($user->username); ?> вашият урок е: № <?php echo $less->lesson_id; ?></h4>
+         <h4><?php echo $less->name; ?></h4></div> 
+      <div class="col-xs-12 col-md-12">
+          <?php if($less->pics): ?>
+      <div class="col-xs-6 col-md-6"> 
+          <img class="img-responsive pics" src="<?php echo asset($less->pics); ?>">
+      </div>
+     <?php endif; ?>
+   
+     <p class="text1"><?php echo Markdown::parse(Str::limit($less->text, 30000)); ?></p>
+  
+      <?php if($less->test): ?>
+<p><b>За да продължите към следващия урок трябва да попълните теста към настоящия урок.</b></p>
+        <p><a href="<?php echo URL::route('profile-test'); ?>" class="btn btn-xl" role="button">Тест</a> </p>
+<?php endif; ?>
+ </div> 
+  </div>
+</div>
+</div>  
+<?php endforeach; ?>
+<?php echo $lesson->links(); ?>
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.main3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

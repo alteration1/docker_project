@@ -1,0 +1,55 @@
+<?php $__env->startSection('content'); ?>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-6">
+                    <?php if(Session::has('global')): ?>
+    <p class="text-red"><?php echo Session::get('global'); ?></p>
+        <?php endif; ?>
+        <p class="section-heading ta">Тук може да смените вашата парола:</p>
+                </div></div>
+        <div class="row">
+                <div class="col-md-12">
+<form action="<?php echo URL::route('account-change-password-post'); ?>" method="post" class="form-container">
+    
+   <div class="row">
+        <div class="col-md-6">
+             <div class="form-group">
+       
+       <input type="password" name="old_password" class="form-control" placeholder="Стара парола" id="phone">
+       
+          <p class="error1"> <?php if($errors->has('old_password')): ?>
+        <?php echo $errors->first('old_password'); ?>
+
+        <?php endif; ?> </p>
+      </div>
+    
+    <div class="form-group">
+       
+       <input type="password" name="password" class="form-control" placeholder="Нова парола" id="phone">
+       <p class="error1"><?php if($errors->has('password')): ?>
+        <?php echo $errors->first('password'); ?>
+
+        <?php endif; ?> </p>
+    </div>
+    
+     <div class="form-group">
+       
+       <input type="password" name="password_again" class="form-control" placeholder="Повторете новата парола" id="phone">
+       <p class="error1"><?php if($errors->has('password_again')): ?>
+        <?php echo $errors->first('password_again'); ?>
+
+        <?php endif; ?> </p>
+    </div>
+     
+    <input type="submit" value="Промени паролата" class="btn btn-xl">
+        </div></div>
+    <?php echo Form::token(); ?>
+
+</form>
+                </div></div>
+    </div>
+</section>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.main2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

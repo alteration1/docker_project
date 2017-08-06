@@ -1,0 +1,28 @@
+<?php $__env->startSection('content'); ?><br>
+<section id="contact">
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-5 col-md-offset-2">
+        <?php if(Session::has('global')): ?>
+    <p class="text-red"><?php echo Session::get('global'); ?></p>
+        <?php endif; ?>
+        <h4><?php echo $user->username; ?> това са уроците, които сте прочели:</h4><br>
+
+<?php foreach($less as $les): ?>
+
+<div class="text-uppercase lessons">
+<b><a href="<?php echo URL::route('profile-lesson',$les->id); ?>"><?php echo $les->name; ?></a></b><br>
+</div>
+   
+<?php endforeach; ?>
+
+
+
+</div>
+</div>
+    </div>
+</section>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.main2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
