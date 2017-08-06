@@ -5,11 +5,11 @@
     <div class="container">
         
 <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-5 col-md-offset-2">
         @if(Session::has('global'))
-    <h3>{{ Session::get('global') }}</h3>
+    <p class="text-red">{{ Session::get('global') }}</p>
         @endif
-        <h3>{{$user->username}} това са уроците, които сте прочели:</h3><br>
+        <h4>{{$user->username}} това са уроците, които сте прочели:</h4><br>
 
 @foreach($less as $les)
 

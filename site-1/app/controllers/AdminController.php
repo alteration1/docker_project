@@ -1,1 +1,28 @@
-<?php/* * To change this license header, choose License Headers in Project Properties. * To change this template file, choose Tools | Templates * and open the template in the editor. *//** * Description of Admin * * @author Росана */class AdminController extends BaseController{    public function usinfo()    {        $username = Auth::user()->username;        $user = User::where('username', '=', $username);        if ($user->count()) {            //  $users = User::all();            return View::make('info.usinfo');        } else {            return Redirect::route('home');        }    }    public function getSearch()    {        $username = Auth::user()->username;        $user = User::where('username', '=', $username);        if ($user->count()) {            return View::make('info.search', ['users' => null]);        } else {            return Redirect::route('home');        }    }    public function postSearch()    {        $username = Auth::user()->username;        $user = User::where('username', '=', $username);        if ($user->count()) {            Input::merge(array_map('trim', Input::all()));            $users = null;            if (Input::has('email')) {                $email = Input::get('email');                $users = User::where('email', '=', $email)->get();                return View::make('info.search', ['users' => $users]);            }        } else {            return Redirect::route('home');        }    }}
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of Admin
+ *
+ * @author Росана
+ */
+class AdminController extends BaseController{
+    
+    public function usinfo(){
+        $username = Auth::user()->username;
+         $user = User::where('username', '=', $username);
+        
+        if($user->count()){
+            $users = User::all();
+             return View::make('info.usinfo');
+        }else{
+                return Redirect::route('home');
+            }
+    }
+    
+}

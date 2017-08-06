@@ -4,21 +4,20 @@
 <?php $quest = Questions::find($id);?>
 <section id="contact">
     <div class="container">
-        
-            
-  <div class="row">
-    <div class="col-md-10">
-         @if(Session::has('global'))
-    <h3>{{ Session::get('global') }}</h3>
+        @if(Session::has('global'))
+    <p class="text">{{ Session::get('global') }}</p>
         @endif
         <form action="{{ URL::route('test3-post') }}" method="post">
+            
+  <div class="row">
+    <div class="col-md-12">
       <div class="panel panel-default">
          <div class="panel-heading">
-            <h3 class="panel-title">3.{{$quest->quest3}}</h3>
+            <p class="panel-title">3.{{$quest->quest3}}</p>
          </div>
       <div class="panel-body">
         <div class="row">
-           <div class="col-lg-2">
+           <div class="col-md-2">
               <div class="input-group">
                  <span class="input-group-addon">
                  <input type="radio" name="ans1" value="1">
@@ -26,7 +25,7 @@
             <div class="form-control">Вярно</div>
             </div><!-- /input-group -->
            </div>
-           <div class="col-lg-2">
+           <div class="col-md-2">
               <div class="input-group">
                  <span class="input-group-addon">
                  <input type="radio" name="ans1" value="2">
@@ -43,8 +42,8 @@
             
       <div class="container">
          <div class="row">
-           <div class="input-group col-lg-5"> 
-             <input type="submit" value="Отговори" class="btn btn-xl btn-lg">
+           <div class="input-group col-md-5"> 
+             <input type="submit" value="Отговори" class="btn btn-xl bt">
            </div>
          </div>
        </div>

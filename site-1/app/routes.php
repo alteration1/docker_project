@@ -96,29 +96,29 @@ Route::get('/contact',array(
 ));
 
 /*
+ | Questions
+ */
+Route::get('/questions',array(
+    'as' => 'questions',
+    'uses' => 'AccountController@questions'
+));
+
+
+/*
+ | Questions
+ */
+Route::post('/questions',array(
+    'as' => 'questions-post',
+    'uses' => 'MailController@questions'
+));
+
+/*
  | Info
  */
 Route::get('/info/usinfo',array(
     'before' => 'auth',
     'as' => 'usinfo',
     'uses' => 'AdminController@usinfo'
-));
-
-/*
- | Search-get (GET) 
- */
-Route::get('/info/search',array(
-    'before' => 'auth',
-    'as' => 'search-get',
-    'uses' => 'AdminController@getSearch'
-));
-
-/*
- | Search-post (POST)
- */
-Route::post('/info/search',array(
-    'as' => 'search-post',
-    'uses' => 'AdminController@postSearch'
 ));
 
 /*

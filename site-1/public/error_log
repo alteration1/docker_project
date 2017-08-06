@@ -1,9 +1,1 @@
-[03-Sep-2014 23:24:55 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:27:10 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:27:29 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:27:30 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:27:30 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:27:31 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:27:31 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[03-Sep-2014 23:30:07 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/izuchava/public_html/bible.izuchavai.me/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 411
-[25-Sep-2014 20:34:47 UTC] PHP Fatal error:  Class 'Lesson' not found in /home/izuchava/public_html/bible.izuchavai.me/app/controllers/ProfileController.php on line 12
+[28-Mar-2015 12:34:03 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/izuchava/public_html/family.izuchavai.me/app/controllers/MailController.php on line 224

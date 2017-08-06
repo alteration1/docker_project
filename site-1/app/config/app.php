@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'jCNErmVN1eyq2fsiBCF2gRpvDGcvdxZE',
+	'key' => 'E5K8SYtwVpQp8NLSNFCfvq2lXbXfws5E',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -121,8 +121,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-            
-                'MaxHoffmann\Parsedown\ParsedownServiceProvider',
+                'MaxHoffmann\Parsedown\ParsedownServiceProvider'
 
 	),
 
@@ -190,7 +189,6 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-            
                 'Markdown'        => 'MaxHoffmann\Parsedown\ParsedownFacade',
 
 	),

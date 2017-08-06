@@ -52,21 +52,21 @@ App::error(function(Exception $exception, $code)
 });
 
 App::missing(function($exception)
-{$less1 = Lessons::find(1);
+{
+
+     $less1 = Lessons::find(1);
              $less2 = Lessons::find(2);
               $less3 = Lessons::find(3);
-               $less4 = Lessons::find(5);
-                $less5 = Lessons::find(6);
-                 $less6 = Lessons::find(7);
-                 $less7 = Lessons::find(15);
-             $less8 = Lessons::find(16);
-              $less9 = Lessons::find(18);
-               $less10 = Lessons::find(19);
-                $less11 = Lessons::find(27);
-                 $less12 = Lessons::find(29);
-                 
-            
-		return Response::view('home',array('less1'=>$less1,'less2'=>$less2,'less2'=>$less2,
+               $less4 = Lessons::find(4);
+                $less5 = Lessons::find(5);
+                 $less6 = Lessons::find(6);
+                 $less7 = Lessons::find(7);
+             $less8 = Lessons::find(8);
+              $less9 = Lessons::find(9);
+               $less10 = Lessons::find(10);
+                $less11 = Lessons::find(12);
+                 $less12 = Lessons::find(13);
+    return Response::view('home',array('less1'=>$less1,'less2'=>$less2,'less2'=>$less2,
                     'less3'=>$less3,'less4'=>$less4,'less5'=>$less5,'less6'=>$less6,
                     'less7'=>$less7,'less8'=>$less8,'less9'=>$less9,
                     'less10'=>$less10,'less11'=>$less11,'less12'=>$less12), 404);
