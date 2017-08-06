@@ -1,0 +1,133 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-6-5, 16:43:39
+    Author     : Росана
+*/
+.cf:before,
+.cf:after{
+    content: " ";
+    display:table;
+}
+.cf:after{
+    clear:both;
+}
+
+
+.si{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.textbox{
+   
+    font-family:Book Antiqua;
+    font-size: large;
+    min-height: 400px;
+    width:500px;
+    float:left;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: transparent;
+    color:#00008B; 
+    text-align:justify;
+  
+}
+
+.te{
+    text-align: justify;
+font-size: xx-large;
+}
+.si{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.pics{
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.lessons{
+    background-color: rgba(28,28,28,0.5); 
+    padding: 5px;
+}
+.text{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    font-weight: bold;
+    font-size: large;
+    color: white; 
+    background-color: rgba(28,28,28,0.5); 
+    float:left;
+    margin-top: 100px;
+     padding: 5px;
+    
+}
+.text1 {
+    font-family:Arial, Helvetica, sans-serif !important;
+    text-align:justify;
+    font-size: 100px;
+    color: black; 
+    
+    
+    
+}
+
+.de{
+    margin: 0 5px;
+}
+.error{
+    margin-top: 100px;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: large;
+}
+
+.error1{
+    
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: large;
+}
+
+.text-red{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    font-weight: bold;
+    font-size: large;
+    color: white; 
+    background-color: rgba(28,28,28,0.5); 
+    padding: 5px;
+    
+}
+
+section#contac {
+    background-color: transparent;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    color:black;
+    
+}
+
+.jumbotro {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: black;
+  background-color: #F0F0F0;
+}
+
+.jumbotro p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  text-align:justify;
+  
+}
+
+.bt {
+    margin-left: 20px;
+}
