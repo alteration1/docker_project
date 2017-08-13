@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="composity">
+            <file>file:/var/www/site-1/app/views/layout/main3.blade.php</file>
+            <file>file:/var/www/site-1/app/views/account/create.blade.php</file>
+            <file>file:/var/www/site-1/app/controllers/ProfileController.php</file>
+            <file>file:/var/www/site-1/app/views/profile/user.blade.php</file>
+            <file>file:/var/www/site-1/app/views/account/questions.blade.php</file>
+            <file>file:/var/www/site-1/app/controllers/AccountController.php</file>
+            <file>file:/var/www/site-1/app/views/account/password.blade.php</file>
+            <file>file:/var/www/site-1/app/views/account/signin.blade.php</file>
+            <file>file:/var/www/site-1/app/views/account/forgot.blade.php</file>
+        </group>
+    </open-files>
+</project-private>

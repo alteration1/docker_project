@@ -5,6 +5,14 @@ Route::get('/', array(
     'uses' => 'HomeController@home'
 ));
 
+  /*
+     | Sign out (GET)
+     */
+    Route::get('/count-lessons.json', array(
+        'as' => 'count-lessons',
+        'uses' => 'AccountController@getCountLessons'
+    ));
+
 /*
  | Language
  */
@@ -190,6 +198,8 @@ Route::group(array('before' => 'auth'), function(){
         'as' => 'account-sign-out',
         'uses' => 'AccountController@getSignOut'
     ));
+   
+   
 });
 
 

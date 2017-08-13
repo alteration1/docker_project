@@ -11,7 +11,7 @@
     <meta name="author" content="Super User" />
     <meta name="description" content="По един много достъпен и практичен начин, с много примери, уроците ни предлагат помощ при разрешаване на част от проблемите, които възникват в семейството и при възпитанието на децата." />
 
-
+ {{ HTML::script('js/jquery-1.11.0.js') }}
     <title>Семейството</title>
 {{ HTML::style('css/style5.css') }}
     <!-- Bootstrap Core CSS -->
@@ -135,7 +135,7 @@
     
     
     <!-- jQuery Version 1.11.0 -->
-    {{ HTML::script('js/jquery-1.11.0.js') }}
+   
     
     <!-- Bootstrap Core JavaScript -->
     {{ HTML::script('js/bootstrap.min.js') }}
