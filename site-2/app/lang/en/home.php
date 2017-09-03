@@ -30,7 +30,7 @@ return array(
     'you_are_not' => 'You are not signed in.',
     'lng' => 'Language',
     'users_blade_title' => 'Uploaded files',
-    
+    'lesson_no' => '   Lesson №'
        
 );
 

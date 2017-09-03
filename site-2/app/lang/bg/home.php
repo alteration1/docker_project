@@ -31,6 +31,6 @@ return array(
     'you_are_not' => 'Не сте вписан/а.',
     'lng' => 'Избери Език',
     'users_blade_title' => 'Качени файлове',
-    
+    'lesson_no' => '   Урок №'
     
 );

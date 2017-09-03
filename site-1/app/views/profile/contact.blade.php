@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                              <div class="form-group">
-              <div class="g-recaptcha" data-sitekey="6LcQqQMTAAAAALY33DCR4usfN2GovEraBWhQtfoC"></div></div>
+            
                             <div class="col-lg-12">
                                 {{ Form::submit('Изпрати съобщение', array('class'=>'btn btn-xl')) }}
                             </div>

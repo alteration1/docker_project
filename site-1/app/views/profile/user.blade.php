@@ -6,18 +6,31 @@
 @foreach($lesson as $less)
 <script>
     jQuery(document).ready(function () {
-        var lesson = "{{ $less->lesson_id }}";
-        var user = "{{ $user->userId }}";
-        var url = "http://site-2.dev/count-lessons.json?lesson=" + lesson + "&user=" + user;
+
         $('#send_get_request').on('click', function (e) {
-            $.ajax({
+
+            var lesson = "{{ $less->lesson_id }}";
+            var user = "{{ $user->email }}";
+            var url = "http://site-2.dev/count-lessons.json";
+  
+                  $.get(url, {lesson: lesson, user: user},'jsonp')
+           ;
+                    
+                  
+                    
+            jQuery.ajax({
                 type: "GET",
                 dataType: 'jsonp',
                 url: url,
                 success: function (data) {
-                     console.log(data);
+                    console.log(data);
                 },
+                error: function(e){
+                  //  console.log(e);
+                   
+                }
             });
+           
         });
     });
 </script>

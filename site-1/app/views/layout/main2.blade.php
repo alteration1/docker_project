@@ -78,13 +78,13 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    @if(Auth::check())
-               <li><a class="page-scroll" href="{{ URL::route('account-sign-out') }}">Изход</a></li>
-               <li><a class="page-scroll" href="{{ URL::route('account-change-password') }}">Смяна на парола</a></li>
+                    @if(Auth::check())               
                <li><a  class="page-scroll" href="{{ URL::route('profile-user') }}">Вашият урок</a></li>
                <li><a class="page-scroll" href="{{ URL::route('profile-lessons') }}">Завършени уроци</a></li>
                <li><a class="page-scroll" href="{{ URL::route('contact') }}">Контакти</a></li>
                <li><a class="page-scroll" href="{{ URL::route('links') }}">Връзки</a></li>
+               <li><a class="page-scroll" href="{{ URL::route('account-change-password') }}">Смяна на парола</a></li>               
+               <li><a class="page-scroll" href="{{ URL::route('account-sign-out') }}">Изход</a></li>
              @else
              <li><a class="page-scroll" href="{{ URL::route('account-sign-in') }}"><b>Вход</b></a></li>
              <li><a class="page-scroll" href="{{ URL::route('account-create') }}"><b> Регистрация</b></a></li>

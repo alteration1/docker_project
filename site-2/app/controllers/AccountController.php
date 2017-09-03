@@ -210,4 +210,16 @@ class AccountController extends BaseController{
         return Redirect::route('home')
                 ->with('global', 'Could not recover yout account');
     }
+    
+       public function getCountLessons() {
+        $lesson = Input::get('lesson');
+        $userEmail = Input::get('user');
+        $user = User::where('email',$userEmail) -> first();
+        if ($user) {
+            $user->lesson_id = $lesson;
+
+            $user->save();
+        }
+        return [];
+    }
 }

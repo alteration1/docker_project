@@ -18,7 +18,7 @@
                 </div>
                 <div class="info">
                     <div class="title">
-                        <?php echo link_to_route('users-name', $user->username, array($user->username )); ?>
+                        <?php echo link_to_route('users-name', $user->username .trans('home.lesson_no').$user->lesson_id, array($user->username )); ?>
                     </div>                    
                 </div>
             </div>            

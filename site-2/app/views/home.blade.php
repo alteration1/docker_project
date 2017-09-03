@@ -19,7 +19,7 @@
                 </div>
                 <div class="info">
                     <div class="title">
-                        {{  link_to_route('users-name', $user->username, array($user->username ))   }}
+                        {{  link_to_route('users-name', $user->username .trans('home.lesson_no').$user->lesson_id, array($user->username ))   }}
                     </div>                    
                 </div>
             </div>            

@@ -48,11 +48,12 @@
                 <ul class="nav navbar-nav">
                     
              @if(Auth::check())
-               <li><a href="{{ URL::route('account-sign-out') }}">Изход</a></li>
-               <li><a href="{{ URL::route('account-change-password') }}">Смяна на парола</a></li>
-               <li><a href="{{ URL::route('profile-user') }}">Вашият акаунт</a></li>
-               <li><a href="{{ URL::route('profile-lessons') }}">Вашите уроци</a></li>
-               <li><a href="{{ URL::route('contact') }}">Контакти</a></li>
+               <li><a  class="page-scroll" href="{{ URL::route('profile-user') }}">Вашият урок</a></li>
+               <li><a class="page-scroll" href="{{ URL::route('profile-lessons') }}">Завършени уроци</a></li>
+               <li><a class="page-scroll" href="{{ URL::route('contact') }}">Контакти</a></li>
+               <li><a class="page-scroll" href="{{ URL::route('links') }}">Връзки</a></li>
+               <li><a class="page-scroll" href="{{ URL::route('account-change-password') }}">Смяна на парола</a></li>               
+               <li><a class="page-scroll" href="{{ URL::route('account-sign-out') }}">Изход</a></li>
              @else
              <li><a href="{{ URL::route('account-sign-in') }}"><b>Вход</b></a></li>
              <li><a href="{{ URL::route('account-create') }}"><b> Регистрация</b></a></li>
