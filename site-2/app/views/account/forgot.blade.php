@@ -6,19 +6,23 @@
         <div class="container">
             
 <form action="{{ URL::route('account-forgot-password-post') }}" method="post">
-    <div class="row">
-         <div class="input-group col-lg-5">
-  <span class="input-group-addon">{{trans('account.email')}}:</span>
-       <input type="text" name="email" class="form-control" {{ (Input::old('email')) ? ' value ="'. e(Input::old('email')) .'"' : '' }}></p>
-         </div>
+    <legend>
+        {{trans('account.title_forgotten')}}
+        <small>{{trans('account.content_forgotten')}}</small>
+    </legend>   
+    
+    <div class="form-group">
+        <label class="">{{trans('account.email')}}:</label>
+        <input type="text" name="email" class="form-control" {{ (Input::old('email')) ? ' value ="'. e(Input::old('email')) .'"' : '' }}></p>
+         <small class="error">
+            @if($errors->has('email'))
+                {{ $errors->first('email') }}
+            @endif
+        </small>
     </div>
-       <p class="red">@if($errors->has('email'))
-        {{ $errors->first('email') }}
-        @endif </p>
-    <div class="row">
-         <div class="input-group col-lg-5">
-    <input type="submit" value="{{trans('account.recover')}}" class="btn btn-danger">
-         </div>
+    
+    <div class="form-group">
+         <input type="submit" value="{{trans('account.recover')}}" class="btn btn-info">
     </div>
     {{ Form::token()}}
     

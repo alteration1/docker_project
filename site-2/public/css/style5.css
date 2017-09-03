@@ -7,6 +7,8 @@ and open the template in the editor.
     Created on : 2014-6-5, 16:43:39
     Author     : Росана
 */
+
+body {font-family: 'Roboto', sans-serif;}
 .cf:before,
 .cf:after{
     content: " ";
@@ -82,6 +84,45 @@ and open the template in the editor.
 .error{
     color: red;
 }
+
+h1 {text-transform: None; font-weight: 200; }
+h1 small {text-transform: none!important; font-weight: inherit;}
+
+legend small {font-size: 75%; opacity: 0.54;}
+
+.navbar form {padding-top: 7px;}
+.navbar form input[type="submit"] {display: none;}
+.navbar form select.form-control {background: transparent; border: transparent; color: #777;}
+.navbar form select.form-control:hover {background: transparent; border: transparent; color: #fff;}
+.navbar form select.form-control:hover option{color: #777;}
+
+.card { box-shadow: 0px 0px 10px #bbb; padding-top: 20px; margin: 10px 0 20px 0; background-color: rgba(214, 224, 226, 0.2); border-top-width: 0;border-bottom-width: 2px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+.card.hovercard {position: relative;padding-top: 0;overflow: hidden;text-align: center;background-color: rgba(214, 224, 226, 0.2);}
+.card.hovercard .cardheader {background-size: cover; height: 110px; background: #5bc0de;}
+.card.hovercard .avatar { position: relative; top: -50px; margin-bottom: -50px;}
+.card.hovercard .avatar img {max-width: 100px; border-radius: 50%; border: solid 2px #fff; box-shadow: 0px 3px 10px #bbb;}
+
+.card.hovercard .info .title {margin-bottom: 4px;font-size: 24px;line-height: 1;color: #262626;vertical-align: middle;}
+.card.hovercard .info .title a {color: #428bca; text-transform: capitalize; margin: 40px auto 30px auto; display: inline-block; }
+td > i.glyphicon {font-size: 1.2em; padding-top: 2px;}
+td > i.glyphicon-trash {color: red;}
+td > i.glyphicon-trash + a  {color: #333;}
+td > i.glyphicon-trash + a:hover  {color: red;}
+
+td > i.glyphicon-comment {color: #5bc0de; font-size: 1.2em; padding-top: 4px;}
+
+.table-hover>tbody>tr:hover>td {
+  background-color: #ededed;
+}
+
+.table thead  {background-color: #ededed;}
+.table thead.thead-inverse th {color: #fff;background-color: #212529;}
+
+
+
+
+footer {border-top: 1px solid #999; padding: 8px 0px;}
+footer p {text-align: right;}
 
 
 

@@ -8,7 +8,7 @@ return array(
     'yes' => 'Yes',
     'no' => 'No',
     'are_you_sure_file' => 'Are you sure that you want to delete this file?',
-    'comment_for' => 'Comment for: ',
+    'comment_for' => 'Submit a comment for file ',
     'download_file' => 'Download file',
     'post' => 'Post',
     'username' => 'Username',

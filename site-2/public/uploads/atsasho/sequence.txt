@@ -1,0 +1,11 @@
+PS D:\VFU\SP\var\www> cd laradocker
+PS D:\VFU\SP\var\www\laradocker> docker-compose ps
+PS D:\VFU\SP\var\www\laradocker> docker-compose down
+PS D:\VFU\SP\var\www\laradocker> docker-compose up -d mysql nginx phpmyadmin
+PS D:\VFU\SP\var\www\laradocker> docker-compose build nginx
+
+http://site-1.dev/
+
+
+PS D:\VFU\SP\var\www\laradocker> netstat
+PS D:\VFU\SP\var\www\laradocker> netstat -an

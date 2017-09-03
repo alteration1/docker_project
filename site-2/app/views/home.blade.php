@@ -3,31 +3,44 @@
 @section('content')
 <br><br>
 <div class="container">
-    @if(Auth::check())
-    <p>{{ trans('home.hello') }}, {{ Auth::user()->username }}</p><br>
+@if(Auth::check())
+<h1>{{ trans('home.hello') }}, {{ Auth::user()->username }}</h1>
+<p class="lead">{{ trans('home.users') }}</p>
 
-    <div class="row">
-        <div class="col-md-5">
-            <table class="table table-hover table-responsive">
-                <tr><th class="text-center">{{ trans('home.users') }}</th ><th class="text-center">Lesson No</th></tr>
-                @foreach ($useres as $user)
-                <tr><td class="text-center">{{  link_to_route('users-name', $user->username, array($user->username ))   }}</td>
-                    <td class="text-center">{{$user->lesson_id}}</td>
-                </tr>
-                @endforeach
-            </table>
-            {{ $useres->links()}} 
+<div class="row">
+    @foreach ($useres as $user)
+    <div class="col-sm-6 col-md-3 ">            
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img class="img-center" src="{{ asset('css/avatar-default.gif') }}">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        {{  link_to_route('users-name', $user->username, array($user->username ))   }}
+                    </div>                    
+                </div>
+            </div>            
         </div>
-    </div>
-    <br><br><br>
+    @endforeach
+</div>
 
+<div class="row">
+    <div class="col-xs-12">
+        {{ $useres->links()}} 
+    </div>
+</div>
 
     <br><br>
 
-    @else
-    <p>{{ trans('home.you_are_not') }}</p>
 
 
-    @endif
+@else
+<p>{{ trans('home.you_are_not') }}</p>
+
+
+@endif
 </div>
 @stop

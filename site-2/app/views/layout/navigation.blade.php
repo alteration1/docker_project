@@ -3,6 +3,19 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+            <div class="pull-right">
+               <form action="{{ URL::route('language-chooser') }}" method="post" class="form-inline" >
+                   <div class="form-group">
+                        <select name="locale" class="form-control" onchange="this.form.submit()">
+                            <option value="0">{{trans('home.lng')}}</option>
+                            <option value="en">English</option>
+                            <option value="bg">Български</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Choose" class="btn btn-default">
+                    {{ Form::token() }}
+                </form>
+            </div>
             
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

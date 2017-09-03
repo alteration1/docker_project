@@ -5,14 +5,6 @@ Route::get('/', array(
     'uses' => 'HomeController@home'
 ));
 
-  /*
-     | Sign out (GET)
-     */
-    Route::get('/count-lessons.json', array(
-        'as' => 'count-lessons',
-        'uses' => 'AccountController@getCountLessons'
-    ));
-
 /*
  | Language
  */
@@ -78,14 +70,6 @@ Route::get('/filecomment/download/{fileid}',array(
 ));
 
 /*
- | Download file get
- 
-Route::get('/filecomment/download/{fileid}',array(
-    'as'=>'file-download',
-    'uses' => 'ProfileController@downloadView'
-        ));
-*/
-/*
  | Post comment
  */
 Route::post('/filecomment/{fileid}', array(
@@ -117,53 +101,9 @@ Route::get('/users/{username}',array(
          'uses' => 'ProfileController@usersView'
            )
         );
-/*
- | Upload file admin
- */
-
-Route::post('/home',array(
-    'as' => 'admin-file-post',
-    'uses' => 'AdminController@postFile'
-));
 
 
 
-/*
- | Download lesson
- */
-Route::get('/lesson/{id}',array(
-         'as' => 'download-lesson',
-         'uses' => 'AdminController@downloadLesson'
-           )
-        );
-
-/*
- | View lesson name
- 
-Route::get('/lesson/{id}',array(
-         'as' => 'lesson-name',
-         'uses' => 'AdminController@lessonView'
-           )
-        );
-*/
-
-/*
- | Delete lesson post
- */
-Route::post('/lesson/delete/{id}',array(
-         'as' => 'delete-lesson',
-         'uses' => 'AdminController@handleDeleteLesson'
-           )
-        );
-
-/*
- | Delete lesson view
- */
-Route::get('/lesson/delete/{id}',array(
-         'as' => 'delete-lesson-view',
-         'uses' => 'AdminController@deleteLesson'
-           )
-        );
 
 /*
  | Authenticated group
@@ -198,8 +138,6 @@ Route::group(array('before' => 'auth'), function(){
         'as' => 'account-sign-out',
         'uses' => 'AccountController@getSignOut'
     ));
-   
-   
 });
 
 

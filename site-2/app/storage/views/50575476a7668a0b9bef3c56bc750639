@@ -2,32 +2,45 @@
 <?php $__env->startSection('content'); ?>
 <br><br>
 <div class="container">
-    <?php if(Auth::check()): ?>
-    <p><?php echo trans('home.hello'); ?>, <?php echo Auth::user()->username; ?></p><br>
+<?php if(Auth::check()): ?>
+<h1><?php echo trans('home.hello'); ?>, <?php echo Auth::user()->username; ?></h1>
+<p class="lead"><?php echo trans('home.users'); ?></p>
 
-    <div class="row">
-        <div class="col-md-5">
-            <table class="table table-hover table-responsive">
-                <tr><th class="text-center"><?php echo trans('home.users'); ?></th ><th class="text-center">Lesson No</th></tr>
-                <?php foreach ($useres as $user): ?>
-                <tr><td class="text-center"><?php echo link_to_route('users-name', $user->username, array($user->username )); ?></td>
-                    <td class="text-center"><?php echo $user->lesson_id; ?></td>
-                </tr>
-                <?php endforeach; ?>
-            </table>
-            <?php echo $useres->links(); ?> 
+<div class="row">
+    <?php foreach ($useres as $user): ?>
+    <div class="col-sm-6 col-md-3 ">            
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img class="img-center" src="<?php echo asset('css/avatar-default.gif'); ?>">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <?php echo link_to_route('users-name', $user->username, array($user->username )); ?>
+                    </div>                    
+                </div>
+            </div>            
         </div>
-    </div>
-    <br><br><br>
+    <?php endforeach; ?>
+</div>
 
+<div class="row">
+    <div class="col-xs-12">
+        <?php echo $useres->links(); ?> 
+    </div>
+</div>
 
     <br><br>
 
-    <?php else: ?>
-    <p><?php echo trans('home.you_are_not'); ?></p>
 
 
-    <?php endif; ?>
+<?php else: ?>
+<p><?php echo trans('home.you_are_not'); ?></p>
+
+
+<?php endif; ?>
 </div>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

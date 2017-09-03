@@ -27,7 +27,9 @@ return array(
     'are_you_sure' => 'Are you sure you want to delete this lesson?',
     'yes' => 'Yes',
     'no' => 'No',
-    'you_are_not' => 'You are not sign in.',
+    'you_are_not' => 'You are not signed in.',
+    'lng' => 'Language',
+    'users_blade_title' => 'Uploaded files',
     
        
 );

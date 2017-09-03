@@ -4,6 +4,10 @@
  * Преводът на: signin.blade.php,create.blade.php, forgot.blade.php, password.blade.php
  */
 return array(
+    'title' => 'Sign In to your Account',
+    'title_create' => 'Create a new account',
+    'title_forgotten' => 'Forgotten password',
+    'content_forgotten' => 'Retrieve your password via email',
     'email' => 'Email',
     'password' => 'Password',
     'remember' => 'Remember me',

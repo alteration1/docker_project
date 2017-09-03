@@ -18,8 +18,8 @@ class HomeController extends BaseController {
 	public function home()
 	{
             $useres=User::paginate(10);
-            $lessons=Lessons::all();
-		return View::make('home',array('lessons' =>$lessons,'useres'=>$useres));
+           
+		return View::make('home',array('useres'=>$useres));
 	}
 
 }
