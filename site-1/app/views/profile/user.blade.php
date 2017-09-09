@@ -11,13 +11,13 @@
 
             var lesson = "{{ $less->lesson_id }}";
             var user = "{{ $user->email }}";
-            var url = "http://site-2.dev/count-lessons.json";
+            var url = "http://filesystem.vasilpenchev.com/count-lessons.json";
   
                   $.get(url, {lesson: lesson, user: user},'jsonp')
            ;
                     
                   
-                    
+                 /*   
             jQuery.ajax({
                 type: "GET",
                 dataType: 'jsonp',
@@ -26,10 +26,10 @@
                     console.log(data);
                 },
                 error: function(e){
-                  //  console.log(e);
-                   
+                   // console.log(e);
+                    
                 }
-            });
+            });*/
            
         });
     });

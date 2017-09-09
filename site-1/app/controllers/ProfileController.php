@@ -11,15 +11,15 @@ class ProfileController extends BaseController {
             $user = $user->first();
             $lesson = Lesson::where('lesson_id', '=', $user->lesson_id)->paginate(1);
 
-            if ($user->lesson_id < 15) {
+            if ($user->lesson_id < 7) {
                 return View::make('profile.user', array('user' => $user, 'lesson' => $lesson));
             } else {
-                if ($user->lesson_id == 15) {
+                if ($user->lesson_id == 7) {
                     return Redirect::route('profile-finish')
                                     ->with('global', 'Поздравления успешно завършихте курса!
         Ако желаете да получите като подарък книга и свидетелство <br>
         за завършен курс, моля попълнете следната форма.');
-                } elseif ($user->lesson_id > 15) {
+                } elseif ($user->lesson_id > 7) {
                     return Redirect::route('profile-lessons')->with('global', 'Нямате настоящ урок тъй като сте завършили курса.');
                 }
             }
@@ -35,7 +35,7 @@ class ProfileController extends BaseController {
 
         if ($user->count()) {
             $user = $user->first();
-            $less = Lessons::where('id', '<=', $user->lesson_id)->get();
+            $less = Lessons::where('id', '<', $user->lesson_id)->get();
             return View::make('profile.lessons', array('user' => $user, 'less' => $less));
         }
 
@@ -82,10 +82,9 @@ class ProfileController extends BaseController {
 
     public function finish() {
         $id = Auth::user()->lesson_id;
-        if ($id == 14) {
+        if ($id == 6) {
             $user = User::find(Auth::user()->id);
-
-            $user->lesson_id = 15;
+            $user->lesson_id = 7;
 
             $user->save();
             return View::make('profile.finish')
@@ -149,25 +148,14 @@ class ProfileController extends BaseController {
         $id = Auth::user()->lesson_id;
         $ans = Test::find($id);
         if ($ans1 == $ans->ans3) {
-            if ($id < 14) {
+            if ($id < 6) {
                 $user = User::find(Auth::user()->id);
 
                 $user->lesson_id = $id + 1;
                 $id +=1;
                 $user->save();
 
-                //post to site-2.dev  
-                $curl = curl_init();
-// Set some options - we are passing in a useragent too here
-curl_setopt_array($curl, array(
-    CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://site-2.dev/count-lessons?lesson=3&user=1',
-    CURLOPT_USERAGENT => 'Sample cURL Request'
-));
-// Send the request & save response to $resp
-$resp = curl_exec($curl);
-// Close request to clear up some resources
-curl_close($curl);
+
             
                 return Redirect::route('profile-user')
                                 ->with('global', 'Верен отговор! Можете да продължите със следващия урок.');

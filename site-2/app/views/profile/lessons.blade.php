@@ -22,25 +22,6 @@
 </div>
     <br><br>
 
-@if(Auth::user()->role)
-<p></p><br>
-{{ Form::open(array('action' => 'AdminController@postFile','files'=>true)) }}
-	{{ Form::token() }}
-	{{ Form::file('file') }}
-        @if($errors->has('file'))
-          {{ $errors->first('file') }}
-          @endif
-          <br><br>
-         <p> {{ trans('home.description') }}: <br>{{ Form::textarea('description',$value=null,array('class' => 'ta5')) }}
-          @if($errors->has('description'))
-          {{ $errors->first('description') }}
-          @endif </p>
-          <br>
-	{{ Form::submit(trans('home.upload') , array('class' => 'btn btn-danger')) }}
-{{ Form::close() }}
-<br><br>
-@endif
-
 
 @endif
 </div>

@@ -11,7 +11,7 @@
  * @author Rosana
  */
 class Files extends Eloquent {
-    protected $fillable = array('filename','username');
+    protected $fillable = array('filename','userId');
     /**
 	 * The database table used by the model.
 	 *

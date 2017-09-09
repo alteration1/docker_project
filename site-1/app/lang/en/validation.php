@@ -33,7 +33,7 @@ return array(
 	"different"            => "The :attribute and :other must be different.",
 	"digits"               => "The :attribute must be :digits digits.",
 	"digits_between"       => "The :attribute must be between :min and :max digits.",
-	"email"                => "Полето трябва да съдържа валиден имейл адрес.",
+	"email"                => "The :attribute must be a valid email address.",
 	"exists"               => "The selected :attribute is invalid.",
 	"image"                => "The :attribute must be an image.",
 	"in"                   => "The selected :attribute is invalid.",
@@ -42,33 +42,33 @@ return array(
 	"max"                  => array(
 		"numeric" => "The :attribute may not be greater than :max.",
 		"file"    => "The :attribute may not be greater than :max kilobytes.",
-		"string"  => "Полето може да съдържа не повече от :max символа.",
+		"string"  => "The :attribute may not be greater than :max characters.",
 		"array"   => "The :attribute may not have more than :max items.",
 	),
 	"mimes"                => "The :attribute must be a file of type: :values.",
 	"min"                  => array(
 		"numeric" => "The :attribute must be at least :min.",
 		"file"    => "The :attribute must be at least :min kilobytes.",
-		"string"  => "Полето трябва да съдържа поне :min символа.",
+		"string"  => "The :attribute must be at least :min characters.",
 		"array"   => "The :attribute must have at least :min items.",
 	),
 	"not_in"               => "The selected :attribute is invalid.",
 	"numeric"              => "The :attribute must be a number.",
 	"regex"                => "The :attribute format is invalid.",
-	"required"             => "Полето е задължително.",
+	"required"             => "The :attribute field is required.",
 	"required_if"          => "The :attribute field is required when :other is :value.",
 	"required_with"        => "The :attribute field is required when :values is present.",
 	"required_with_all"    => "The :attribute field is required when :values is present.",
 	"required_without"     => "The :attribute field is required when :values is not present.",
 	"required_without_all" => "The :attribute field is required when none of :values are present.",
-	"same"                 => ":attribute и :other трябва да съвпадат.",
+	"same"                 => "The :attribute and :other must match.",
 	"size"                 => array(
-		"numeric" => " :attribute must be :size.",
+		"numeric" => "The :attribute must be :size.",
 		"file"    => "The :attribute must be :size kilobytes.",
 		"string"  => "The :attribute must be :size characters.",
 		"array"   => "The :attribute must contain :size items.",
 	),
-	"unique"               => "Името/пощата вече съществуват.",
+	"unique"               => "The :attribute has already been taken.",
 	"url"                  => "The :attribute format is invalid.",
 
 	/*
@@ -99,11 +99,6 @@ return array(
 	|
 	*/
 
-	'attributes' => array(
-            'password' => 'парола',
-            'password_again' => 'Полето повторете паролата',
-            'email' => 'Електронна поща',
-            'password' => 'парола',
-        ),
+	'attributes' => array(),
 
 );

@@ -42,13 +42,13 @@ class MailController extends BaseController {
             $ans1 = Input::get('ans1');
             $ans2 = Input::get('ans2');
             $ans3 = Input::get('ans3');
-            $course = 'family.izuchavai.me';
+            $course = 'filesistem';
 
             $messages = array($fromEmail, $fromName, $last_name, $mesg, $ans1, $ans2, $ans3, $course);
             $array_to_string = implode(',', $messages);
             $data = [ 'msg' => $array_to_string];
 
-            $toEmail = 'office@izuchavai.me';
+            $toEmail = 'penchevarosana@gmail.com';
 
 
             Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $fromName) {
@@ -94,7 +94,7 @@ class MailController extends BaseController {
             $fromName = $user->username;
             $data = [ 'msg' => Input::get('message')];
 
-            $toEmail = 'office@izuchavai.me';
+            $toEmail = 'penchevarosana@gmail.com';
 
 
             Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $fromName) {
@@ -133,7 +133,7 @@ class MailController extends BaseController {
             $fromEmail = Input::get('email');
             $data = [ 'msg' => Input::get('message')];
 
-            $toEmail = 'office@izuchavai.me';
+            $toEmail = 'penchevarosana@gmail.com';
 
 
             Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail) {

@@ -38,7 +38,7 @@
     </thead>
     
     
-    @foreach ($comments = Comment::where('filename', '=', $files->filename)->get() as $comment)
+    @foreach ($comments = Comment::where('fileId', '=', $files->id)->get() as $comment)
     <tr>
         <td>{{ $comment->username }}</td>    
         <td>{{$comment->comment }}</td>

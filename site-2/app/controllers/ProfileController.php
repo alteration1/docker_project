@@ -3,8 +3,8 @@
 class ProfileController extends BaseController{
     
     public function user(){
-       $username = Auth::user()->username ;
-        $user = User::where('username', '=', $username);
+       $email = Auth::user()->email ;
+        $user = User::where('email', '=', $email);
         
         if($user->count()){
             $user = $user->first();
@@ -44,7 +44,7 @@ class ProfileController extends BaseController{
                        ->with('global','The file already exist.');
                     }else{
                     $files->filename = $filePath;
-                    $files->username = $username;
+                    $files->userId = Auth::user()->id;
                     $files->save();
                    //$getFiles = $files->where('username', '=', $username)->get();
                        return Redirect::route('profile-user')
@@ -67,9 +67,9 @@ class ProfileController extends BaseController{
                
                $files = Files::find($fileid);
             
-               File::delete($files->filename);
+               File::delete($files->id);
                $files->delete();
-               if(File::exists($files->filename)){
+               if(File::exists($files->id)){
                    return Redirect::route('profile-user')
                        ->with('global','Unable to delete the file.');
                }else{
@@ -98,13 +98,14 @@ class ProfileController extends BaseController{
         }else{
             $files = Files::where('id','=', $fileid)->first();
             $comment = Input::get('comment');
-            $username = Auth::user()->username ;
-            $filename = $files->filename;
+            $userId = Auth::user()->id ;
+            $fileId = $files->id;
             
             $comment = Comment::create(array(
                 'comment' => $comment,
-                'username' => $username,
-                'filename' => $filename
+                'userId' => $userId,
+                'fileId' => $fileId,
+                'username' => Auth::user()->username
               ));
             return Redirect::to('/filecomment/'.$fileid)
                      ->with('global', 'Your comment has been successfully published.');
@@ -141,14 +142,14 @@ class ProfileController extends BaseController{
         
         public function commentDelete($id){
             $comment = Comment::find($id);
-            $files = Files::where('filename','=', $comment->filename)->first();
+            $files = Files::where('id','=', $comment->fileId)->first();
             return View::make('profile.delcomment', array('id' =>$id, 'fileid'=>$files->id));
         }
             
         public function commentDeleteHandle($id){
             $comment = Comment::find($id);
-            $files = Files::where('filename','=', $comment->filename)->first();
-            if(Auth::user()->username == $comment->username){
+            $files = Files::where('id','=', $comment->fileId)->first();
+            if(Auth::user()->id == $comment->userId){
                 $comment->delete();
                 return Redirect::to('/filecomment/'.$files->id)
                        ->with('global','The comment is deleted.'); 
