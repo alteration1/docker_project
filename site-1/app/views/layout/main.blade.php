@@ -80,7 +80,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p></p>
+                    <hr />
+                    <p>&copy; Copyright 2017</p>
                 </div>
             </div>
            

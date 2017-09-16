@@ -107,7 +107,9 @@ return array(
             "file" => "Файл",
             "filename" => "Файл",
             "description" => "описание",
-            "old_password" => "стара парола"
+            "old_password" => "стара парола",
+            "Choose file" => "Избор на файл",
+            "No file chosen" => "Няма избран файл"
         ),
 
 );

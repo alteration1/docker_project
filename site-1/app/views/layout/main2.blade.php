@@ -6,13 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="http://family.izuchavai.me/" />
-    <meta name="keywords" content="какво предлагаме, предложения, безплатна Библия, семейство, отношения,деца, безплатни библии, безплатни курсове, безплатни книги, безплатно, безплатно обучение, безплатен курс, безплатна Библия, безплатна книга, изучавай ме" />
+   
+    <base href="/" />
+    <meta name="keywords" content="курс" />
     <meta name="author" content="Super User" />
-    <meta name="description" content="По един много достъпен и практичен начин, с много примери, уроците ни предлагат помощ при разрешаване на част от проблемите, които възникват в семейството и при възпитанието на децата." />
+    <meta name="description" content="курс" />
 
 
-    <title>Семейството</title>
+    <title>Виртуализация</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet"> -->
 {{ HTML::style('css/style5.css') }}
     <!-- Bootstrap Core CSS -->
     {{ HTML::style('css/bootstrap.min.css') }}
@@ -104,20 +106,20 @@
      
             
    
-   <footer>
+   <!-- <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <span class="copyright"></span>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
+                    <ul class="list-inline social-buttons"> -->
                        <!-- <li><a href="#"><i class="fa fa-twitter"></i></a> -->
-                        </li>
+                        <!-- </li>
                         <li>
-                        </li>
+                        </li> -->
                        <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a> -->
-                        </li>
+                        <!-- </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -130,6 +132,19 @@
                 </div>
             </div>
         </div>
+    </footer> -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr />
+                    <p>&copy; Copyright 2017</p>
+                </div>
+            </div>
+           
+        </div>
+       
     </footer>
 
     

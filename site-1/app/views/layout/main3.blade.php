@@ -7,11 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="http://family.izuchavai.me/" />
-        <meta name="keywords" content="какво предлагаме, предложения, безплатна Библия, семейство, отношения,деца, безплатни библии, безплатни курсове, безплатни книги, безплатно, безплатно обучение, безплатен курс, безплатна Библия, безплатна книга, изучавай ме" />
+        <meta name="keywords" content="" />
         <meta name="author" content="Super User" />
-        <meta name="description" content="По един много достъпен и практичен начин, с много примери, уроците ни предлагат помощ при разрешаване на част от проблемите, които възникват в семейството и при възпитанието на децата." />
+        <meta name="description" content="" />
         {{ HTML::script('js/jquery-1.11.0.js') }}
-        <title>Семейството</title>
+        <title>Виртуализация</title>
         {{ HTML::style('css/style5.css') }}
         <!-- Bootstrap Core CSS -->
         {{ HTML::style('css/bootstrap.min.css') }}

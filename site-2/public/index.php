@@ -17,7 +17,7 @@
 | loading of any our classes "manually". Feels great to relax.
 |
 */
-header("Access-Control-Allow-Origin: http://courses.vasilpenchev.com");
+header("Access-Control-Allow-Origin: http://site-1.dev");
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*

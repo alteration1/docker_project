@@ -8,7 +8,7 @@
                 <div class="intro-lead-in"><b>Онлайн курс</b></div>
                 <div class="intro-heading">Виртуализация</div>
                 
-                <a href="#about" class="page-scrol btn btn-xl">
+               <a href="#about" class="page-scrol btn btn-xl">
                          Научете повече
                     </a>
             </div>

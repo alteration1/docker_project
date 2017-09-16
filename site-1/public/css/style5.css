@@ -82,14 +82,14 @@ font-size: xx-large;
 }
 .error{
     margin-top: 100px;
-    color: #e74c3c;
+    color: #e1b20a;
     font-weight: bold;
     font-size: large;
 }
 
 .error1{
     
-    color: #e74c3c;
+    color: #e1b20a;
     font-weight: bold;
     font-size: large;
 }
@@ -131,3 +131,5 @@ section#contac {
 .bt {
     margin-left: 20px;
 }
+
+.pager li {margin: 0px 15px;}

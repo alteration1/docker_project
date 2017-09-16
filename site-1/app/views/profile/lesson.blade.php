@@ -12,7 +12,7 @@
       <span class="si">{{$less->name}}</span> 
       
  
-      <div class="jumbotro">
+      <div class="jumbotron">
           @if($less->pics)
       <div class="col-xs-6 col-md-6"> 
           <img class="img-responsive pics" src="{{ asset($less->pics)}}">

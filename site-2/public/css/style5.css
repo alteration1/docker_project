@@ -103,7 +103,7 @@ legend small {font-size: 75%; opacity: 0.54;}
 .card.hovercard .avatar img {max-width: 100px; border-radius: 50%; border: solid 2px #fff; box-shadow: 0px 3px 10px #bbb;}
 
 .card.hovercard .info .title {margin-bottom: 4px;font-size: 24px;line-height: 1;color: #262626;vertical-align: middle;}
-.card.hovercard .info .title a {color: #428bca; text-transform: capitalize; margin: 40px auto 30px auto; display: inline-block; }
+.card.hovercard .info .title a {color: #428bca;  margin: 40px auto 30px auto; display: inline-block; }
 td > i.glyphicon {font-size: 1.2em; padding-top: 2px;}
 td > i.glyphicon-trash {color: red;}
 td > i.glyphicon-trash + a  {color: #333;}

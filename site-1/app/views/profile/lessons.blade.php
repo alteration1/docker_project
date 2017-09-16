@@ -9,7 +9,7 @@
         @if(Session::has('global'))
     <p class="text-red">{{ Session::get('global') }}</p>
         @endif
-        <h4>{{$user->username}} това са уроците, които сте прочели:</h4><br>
+      <p class="section-heading ta">{{$user->username}} това са уроците, които сте прочели:</p>
 
 @foreach($less as $les)
 

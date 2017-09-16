@@ -205,7 +205,7 @@ class AccountController extends BaseController {
 
             if ($user->save()) {
                 return Redirect::route('account-sign-in')
-                                ->with('global', 'Профила ви беше възстановен и може да се впишете с новата си парола.');
+                                ->with('global', 'Профилът ви беше възстановен и може да се впишете с новата си парола.');
             }
         }
         return Redirect::route('account-sign-in')

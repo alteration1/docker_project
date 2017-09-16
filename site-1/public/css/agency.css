@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* body {font-family: 'Roboto', sans-serif;} */
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -53,7 +54,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
     font-weight: 700;
 }
 
@@ -666,6 +667,7 @@ section#contact {
 
 section#contact .section-heading {
     color: #fff;
+    font-size: 24px;
 }
 
 section#contact .form-group {
@@ -877,3 +879,7 @@ body {
 .font{
     color: #fff;
 }
+
+.pager li {margin: 0px 15px;}
+
+.intro-lead-in {display: inline-block; margin: 0px auto; padding: 8px 16px; border: 2px solid #fff;}
